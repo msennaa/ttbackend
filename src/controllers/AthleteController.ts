@@ -8,6 +8,12 @@ export default class AthleteController {
     return res.status(200).json(allAthletes);
   }
 
+  registerAthlete = async (req:Request, res:Response) => {
+    const {athlete, value, unity , competitionId} = req.body;
+    const newAthlete = await this.service.registerAthlete(athlete, value, unity, competitionId);
+    return res.status(201).json(newAthlete);
+  }
+
   yogaChampionshipLeaderboard = async (req:Request, res:Response) => {
     const allAthletes = await this.service.getByCategory(1);
     const filteredReturn = allAthletes.map((athlete) => {

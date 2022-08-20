@@ -26,6 +26,11 @@ export default class AthleteService {
     return filter;
   }
 
+  registerAthlete = async (athlete:string, value:string, unity:string, competitionId:number) => {
+    const newAthlete = await Athlete.create({ athlete, value, unity, competitionId });
+    return newAthlete;
+  }
+
   sortAthletes = (array:IAthlete[]) => {
     const teste = array.sort((a, b) => {
       if (a.unity > b.unity)
