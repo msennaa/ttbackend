@@ -10,6 +10,14 @@ module.exports = {
       {
         competition_name: 'competição hidratação',
         in_progress: true,
+      },
+      {
+        competition_name: 'competição perda de peso',
+        in_progress: true,
+      },
+      {
+        competition_name: 'competição dardos',
+        in_progress: true,
       }
     ])
   },
