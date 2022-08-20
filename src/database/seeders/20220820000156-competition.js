@@ -4,19 +4,23 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     queryInterface.bulkInsert('competitions', [
       {
-        competition_name: 'competição yoga',
+        competition_name: 'campeonato de yoga',
         in_progress: true,
       },
       {
-        competition_name: 'competição hidratação',
+        competition_name: 'campeonato de futebol',
+        in_progress: false,
+      },
+      {
+        competition_name: 'campeonato de hidratação',
         in_progress: true,
       },
       {
-        competition_name: 'competição perda de peso',
+        competition_name: 'campeonato de perda de peso',
         in_progress: true,
       },
       {
-        competition_name: 'competição dardos',
+        competition_name: 'campeonato de dardos',
         in_progress: true,
       }
     ])

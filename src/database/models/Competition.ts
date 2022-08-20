@@ -4,7 +4,7 @@ import Competitor from "./Athlete";
 
 export default class Competition extends Model {
   id!: number;
-  competition_name!: string;
+  competitionName!: string;
   inProgress!: boolean;
 }
 
