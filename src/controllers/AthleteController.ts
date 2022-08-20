@@ -1,8 +1,10 @@
 import { Request, Response } from "express";
+import Helpers from "../helpers/Helpers";
 import AthleteService from "../services/AthleteService"
 
 export default class AthleteController {
   service = new AthleteService();
+  helpers = new Helpers();
   getAll = async (req:Request, res:Response) => {
     const allAthletes = await this.service.getAll();
     return res.status(200).json(allAthletes);
@@ -24,7 +26,7 @@ export default class AthleteController {
         unity: athlete.unity,
       }
     })
-    const sortedReturn = this.service.sortAthletes(filteredReturn);
+    const sortedReturn = this.helpers.sortAthletes(filteredReturn);
     
     return res.status(200).json(sortedReturn);
   }
@@ -39,7 +41,7 @@ export default class AthleteController {
         unity: athlete.unity,
       }
     })
-    const sortedReturn = this.service.sortAthletes(filteredReturn);
+    const sortedReturn = this.helpers.sortAthletes(filteredReturn);
     
     return res.status(200).json(sortedReturn);
   }
@@ -54,7 +56,7 @@ export default class AthleteController {
         unity: athlete.unity,
       }
     })
-    const sortedReturn = this.service.sortInvertedAthletes(filteredReturn);
+    const sortedReturn = this.helpers.sortInvertedAthletes(filteredReturn);
     
     return res.status(200).json(sortedReturn);
   }
@@ -69,7 +71,7 @@ export default class AthleteController {
         unity: athlete.unity,
       }
     })
-    const sortedReturn = this.service.sortInvertedAthletes(filteredReturn);
+    const sortedReturn = this.helpers.sortInvertedAthletes(filteredReturn);
     
     return res.status(200).json(sortedReturn);
   }
