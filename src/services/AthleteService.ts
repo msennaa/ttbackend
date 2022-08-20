@@ -1,6 +1,5 @@
 import Athlete from "../database/models/Athlete"
 import Competition from "../database/models/Competition";
-import IAthlete from "../interface/athleteInterface";
 
 export default class AthleteService {
   getAll = async () => {
@@ -30,4 +29,5 @@ export default class AthleteService {
     const newAthlete = await Athlete.create({ athlete, value, unity, competitionId });
     return newAthlete;
   }
+
 }
