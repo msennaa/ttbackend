@@ -6,7 +6,7 @@ export default class Athlete extends Model {
   athlete!: string;
   value!: string;
   unity!: string;
-  competition!: number;
+  competitionId!: number;
 }
 
 Athlete.init({
@@ -28,7 +28,7 @@ Athlete.init({
     type: DataTypes.STRING,
     allowNull: false,
   },
-  competition: {
+  competitionId: {
     type: DataTypes.INTEGER,
     allowNull: false,
   }

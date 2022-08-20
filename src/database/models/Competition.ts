@@ -1,6 +1,6 @@
 import { Model, DataTypes} from "sequelize";
 import db from '.';
-import Competitor from "./Competitor";
+import Competitor from "./Athlete";
 
 export default class Competition extends Model {
   id!: number;
@@ -30,5 +30,5 @@ Competition.init({
   underscored: true,
 })
 
-Competition.hasMany(Competitor, { foreignKey: 'competition' as 'competicao'})
-Competitor.belongsTo(Competition, { foreignKey: 'competition' as 'competicao'})
+Competition.hasMany(Competitor, { foreignKey: 'competitionId' as 'competicao'})
+Competitor.belongsTo(Competition, { foreignKey: 'competitionId' as 'competicao'})
