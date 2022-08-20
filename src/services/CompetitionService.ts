@@ -1,4 +1,3 @@
-import { where } from "sequelize/types";
 import Competition from "../database/models/Competition"
 
 export default class CompetitionService {
