@@ -190,27 +190,31 @@ Competição de dardos: maior distância entre os lançamentos vence
 ```json
 [
     {
+        "posicao": 1,
         "competicao": "campeonato de yoga",
-        "athlete": "Yuri",
-        "value": "10",
+        "atleta": "Yuri",
+        "valor": "10",
         "unity": "m"
     },
     {
+        "posicao": 2,
         "competicao": "campeonato de yoga",
-        "athlete": "Renata",
-        "value": "2",
+        "atleta": "Renata",
+        "valor": "2",
         "unity": "m"
     },
     {
+        "posicao": 3,
         "competicao": "campeonato de yoga",
-        "athlete": "Joao das Neves",
-        "value": "10",
+        "atleta": "Joao das Neves",
+        "valor": "10",
         "unity": "s"
     },
     {
+        "posicao": 4,
         "competicao": "campeonato de yoga",
-        "athlete": "Rui",
-        "value": "2",
+        "atleta": "Rui",
+        "valor": "2",
         "unity": "s"
     }
 ]
@@ -221,27 +225,31 @@ Competição de dardos: maior distância entre os lançamentos vence
 ```json
 [
     {
+        "posicao": 1,
         "competicao": "campeonato de hidratação",
-        "athlete": "Rubens",
-        "value": "8",
+        "atleta": "Rubens",
+        "valor": "8",
         "unity": "l"
     },
     {
+        "posicao": 2,
         "competicao": "campeonato de hidratação",
-        "athlete": "Marcio",
-        "value": "2",
+        "atleta": "Marcio",
+        "valor": "2",
         "unity": "l"
     },
     {
+        "posicao": 3,
         "competicao": "campeonato de hidratação",
-        "athlete": "Joao",
-        "value": "500",
+        "atleta": "Joao",
+        "valor": "500",
         "unity": "ml"
     },
     {
+        "posicao": 4,
         "competicao": "campeonato de hidratação",
-        "athlete": "Oseias",
-        "value": "150",
+        "atleta": "Oseias",
+        "valor": "150",
         "unity": "ml"
     }
 ]
@@ -252,27 +260,31 @@ Competição de dardos: maior distância entre os lançamentos vence
 ```json
 [
     {
+        "posicao": 1,
         "competicao": "campeonato de perda de peso",
-        "athlete": "Brenda",
-        "value": "30",
+        "atleta": "Brenda",
+        "valor": "30",
         "unity": "kg"
     },
     {
+        "posicao": 2,
         "competicao": "campeonato de perda de peso",
-        "athlete": "Ricardo",
-        "value": "2",
+        "atleta": "Ricardo",
+        "valor": "2",
         "unity": "kg"
     },
     {
+        "posicao": 3,
         "competicao": "campeonato de perda de peso",
-        "athlete": "Paula",
-        "value": "500",
+        "atleta": "Paula",
+        "valor": "500",
         "unity": "g"
     },
     {
+        "posicao": 4,
         "competicao": "campeonato de perda de peso",
-        "athlete": "Andre",
-        "value": "100",
+        "atleta": "Andre",
+        "valor": "100",
         "unity": "g"
     }
 ]
@@ -282,27 +294,31 @@ Competição de dardos: maior distância entre os lançamentos vence
 ```json
 [
     {
+        "posicao": 1,
         "competicao": "campeonato de dardos",
-        "athlete": "Marco",
-        "value": "30",
+        "atleta": "Marco",
+        "valor": "30",
         "unity": "m"
     },
     {
+        "posicao": 2,
         "competicao": "campeonato de dardos",
-        "athlete": "Ursula",
-        "value": "15",
+        "atleta": "Ursula",
+        "valor": "15",
         "unity": "m"
     },
     {
+        "posicao": 3,
         "competicao": "campeonato de dardos",
-        "athlete": "Roberto",
-        "value": "50",
+        "atleta": "Roberto",
+        "valor": "50",
         "unity": "cm"
     },
     {
+        "posicao": 4,
         "competicao": "campeonato de dardos",
-        "athlete": "Irineu",
-        "value": "10",
+        "atleta": "Irineu",
+        "valor": "10",
         "unity": "cm"
     }
 ]
@@ -310,7 +326,7 @@ Competição de dardos: maior distância entre os lançamentos vence
 
 </details>
 
-####  3 - Rotas que finaliza e reinicia a competição (PUT)
+####  3 - Rotas que finalizam e reiniciam as competições (PUT)
 
 - Competição de yoga: `http://localhost:3001/yoga`
 
