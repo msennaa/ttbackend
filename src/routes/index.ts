@@ -1,15 +1,19 @@
 import { Router } from "express";
-import athleteRoute from "./athleteRoutes";
 import competitionRoute from "./competitionRoute";
-import leaderboardRoute from "./leaderboardRoutes";
+import dartRoute from "./dartRoute";
+import hidratationRoute from "./hidratationRoute";
+import weightRoute from "./weightRoute";
+import yogaRoute from "./yogaRoute";
 
 
 
 const route = Router();
 
-route.use('/athlete', athleteRoute);
-route.use(leaderboardRoute);
+route.use('/yoga', yogaRoute);
+route.use('/hidratation', hidratationRoute);
 route.use('/register', competitionRoute);
+route.use('/dart', dartRoute);
+route.use('/weight', weightRoute);
 
 
 export default route;
