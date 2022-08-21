@@ -34,6 +34,8 @@ Competição de dardos: maior distância entre os lançamentos vence
   - **Mocha**
   
   - **Sinon**
+  
+  - **Dotenv**
 
 </details>
 
@@ -60,9 +62,9 @@ Competição de dardos: maior distância entre os lançamentos vence
 
   1. Certifique-se que posssui o bando de dados MYSQL em sua maquina
 
-  2. Porta 3001 liberada
+  2. Configuração das variaveis de ambiente
 
-    - Caso queira trocar a porta do servidor: Vá no arquivo src/index.ts e modifique para a porta desejada a variavel PORT
+    - Caso não queira utilizar variavel de ambiente: Vá no arquivo src/database/config/database.ts e modifique manualmente.
   
  </details>
 
