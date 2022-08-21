@@ -3,13 +3,13 @@ import IAthlete from "../interface/athleteInterface";
 export default class Helpers {
   sortAthletes = (array:IAthlete[]) => {
     const teste = array.sort((a, b) => {
-      if (a.unity > b.unity)
+      if (a.unidade > b.unidade)
         return 1;
-      if (a.unity < b.unity)
+      if (a.unidade < b.unidade)
         return -1;
-      if (Number(a.value) > Number(b.value))
+      if (Number(a.valor) > Number(b.valor))
         return -1;
-      if (Number(a.value) < Number(b.value))
+      if (Number(a.valor) < Number(b.valor))
         return 1;  
       return 0;
     })
@@ -18,13 +18,13 @@ export default class Helpers {
 
   sortInvertedAthletes = (array:IAthlete[]) => {
     const teste = array.sort((a, b) => {
-      if (a.unity < b.unity)
+      if (a.unidade < b.unidade)
         return 1;
-      if (a.unity > b.unity)
+      if (a.unidade > b.unidade)
         return -1;
-      if (Number(a.value) > Number(b.value))
+      if (Number(a.valor) > Number(b.valor))
         return -1;
-      if (Number(a.value) < Number(b.value))
+      if (Number(a.valor) < Number(b.valor))
         return 1;  
       return 0;
     })

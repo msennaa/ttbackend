@@ -24,15 +24,24 @@ export default class YogaController {
     const allAthletes = await this.service.getByCategory(competitionId);
     const filteredReturn = allAthletes.map((athlete) => {
       return {
+        posicao: 0,
         competicao: 'campeonato de yoga',
-        athlete: athlete.athlete,
-        value: athlete.value,
-        unity: athlete.unity,
+        atleta: athlete.athlete,
+        valor: athlete.value,
+        unidade: athlete.unity,
       }
     })
     const sortedReturn = this.helpers.sortAthletes(filteredReturn);
-    
-    return res.status(200).json(sortedReturn);
+    const addPosition = sortedReturn.map((athlete, index) => {
+      return {
+        posicao: index + 1,
+        competicao: 'campeonato de yoga',
+        atleta: athlete.atleta,
+        valor: athlete.valor,
+        unity: athlete.unidade,
+      }
+    });
+    return res.status(200).json(addPosition);
   }
 
   updateYogaCompetition = async (req:Request, res:Response) => {

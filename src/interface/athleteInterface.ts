@@ -1,6 +1,7 @@
 export default interface IAthlete {
+  posicao: number;
   competicao: string;
-  athlete: string;
-  value: string;
-  unity: string;
+  atleta: string;
+  valor: string;
+  unidade: string;
 } 

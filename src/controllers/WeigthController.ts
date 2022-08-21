@@ -24,15 +24,24 @@ export default class WeightController {
     const allAthletes = await this.service.getByCategory(competitionId);
     const filteredReturn = allAthletes.map((athlete) => {
       return {
+        posicao: 0,
         competicao: 'campeonato de perda de peso',
-        athlete: athlete.athlete,
-        value: athlete.value,
-        unity: athlete.unity,
+        atleta: athlete.athlete,
+        valor: athlete.value,
+        unidade: athlete.unity,
       }
     })
-    const sortedReturn = this.helpers.sortInvertedAthletes(filteredReturn);
-    
-    return res.status(200).json(sortedReturn);
+    const sortedReturn = this.helpers.sortInvertedAthletes(filteredReturn); 
+    const addPosition = sortedReturn.map((athlete, index) => {
+      return {
+        posicao: index + 1,
+        competicao: 'campeonato de perda de peso',
+        atleta: athlete.atleta,
+        valor: athlete.valor,
+        unity: athlete.unidade,
+      }
+    });
+    return res.status(200).json(addPosition);
   }
 
   updateWeightCompetition = async (req:Request, res:Response) => {
