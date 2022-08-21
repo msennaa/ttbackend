@@ -1,4 +1,4 @@
-# Boas vindas ao repositório do teste Olimpiadas Fit!
+# Boas vindas ao repositório Olimpiadas Fit!
 
 Com a chegada das olimpíadas fit, fomos designados para construir uma API REST em NodeJS para o COF (Comitê Olimpíco Fit), que será responsável por marcar e dizer os vencedores das seguintes modalidades:
 
@@ -73,7 +73,7 @@ Competição de dardos: maior distância entre os lançamentos vence
 
   1. Clone o repositório
 
-  - Use o comando: `git clone git@github.com:msennaa/ttbackend.git`.
+  - Use o comando: `git clone git@github.com:msennaa/ttbackend.git`
   - Entre na pasta do repositório que você acabou de clonar:
     - `cd ttbackend`
 
