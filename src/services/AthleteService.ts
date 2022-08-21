@@ -13,7 +13,7 @@ export default class AthleteService {
     return allAthletes;
   }
 
-  getByCategory = async (category:number) => {
+  getAthletesByCategory = async (category:number) => {
     const allAthletes = await Athlete.findAll({
       include: [
         {model: Competition, as: 'competition', attributes: ['competitionName']}

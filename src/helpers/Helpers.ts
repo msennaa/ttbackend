@@ -2,7 +2,7 @@ import IAthlete from "../interface/athleteInterface";
 
 export default class Helpers {
   sortAthletes = (array:IAthlete[]) => {
-    const teste = array.sort((a, b) => {
+    const sortedArray = array.sort((a, b) => {
       if (a.unidade > b.unidade)
         return 1;
       if (a.unidade < b.unidade)
@@ -13,11 +13,11 @@ export default class Helpers {
         return 1;  
       return 0;
     })
-    return teste
+    return sortedArray
   }
 
   sortInvertedAthletes = (array:IAthlete[]) => {
-    const teste = array.sort((a, b) => {
+    const sortedArray = array.sort((a, b) => {
       if (a.unidade < b.unidade)
         return 1;
       if (a.unidade > b.unidade)
@@ -28,6 +28,6 @@ export default class Helpers {
         return 1;  
       return 0;
     })
-    return teste
+    return sortedArray
   }
 }

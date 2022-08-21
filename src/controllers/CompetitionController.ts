@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-import Competition from "../database/models/Competition";
 import CompetitionService from "../services/CompetitionService";
 
 export default class CompetitionController {

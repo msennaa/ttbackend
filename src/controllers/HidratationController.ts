@@ -21,8 +21,8 @@ export default class HidratationController {
   }
 
   hidratationChampionshipLeaderboard = async (req:Request, res:Response) => {
-    const allAthletes = await this.service.getByCategory(competitionId);
-    const filteredReturn = allAthletes.map((athlete) => {
+    const allAthletes = await this.service.getAthletesByCategory(competitionId);
+    const mapingAthletesArray = allAthletes.map((athlete) => {
       return {
         posicao: 0,
         competicao: 'campeonato de hidratação',
@@ -31,7 +31,7 @@ export default class HidratationController {
         unidade: athlete.unity,
       }
     })
-    const sortedReturn = this.helpers.sortAthletes(filteredReturn);
+    const sortedReturn = this.helpers.sortAthletes(mapingAthletesArray);
     const addPosition = sortedReturn.map((athlete, index) => {
       return {
         posicao: index + 1,
