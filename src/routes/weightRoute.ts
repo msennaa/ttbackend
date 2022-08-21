@@ -8,5 +8,6 @@ const athleteController = new WeightController();
 
 weightRoute.post('/', athleteNameMiddleware, valueMiddleware, unityLoseWeightMiddleware, athleteController.registerWeightAthlete);
 weightRoute.get('/', athleteController.loseWeightChampionshipLeaderboard);
+weightRoute.put('/', athleteController.updateWeightCompetition);
 
 export default weightRoute;

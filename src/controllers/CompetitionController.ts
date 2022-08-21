@@ -15,18 +15,4 @@ export default class CompetitionController {
 
     return res.status(201).json(newCompetition);
   }
-
-  updateCompetition = async (req:Request, res:Response) => {
-    const { id } = req.params;
-    const findCompetition = await Competition.findByPk(Number(id))
-    if (!findCompetition) {
-      return res.status(401).json({ message: 'Competition not found' })
-    }
-    const {inProgress} = findCompetition;
-    await this.service.enableAndDisableCompetition(Number(id), !inProgress);
-    if (inProgress) {
-      return res.status(200).json({ message: "Finishing competition" })
-    }
-    return res.status(200).json({ message: "Restarting competition" })
-  }
 }

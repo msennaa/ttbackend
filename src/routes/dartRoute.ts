@@ -9,5 +9,6 @@ const athleteController = new DartController();
 
 dartRoute.post('/', athleteNameMiddleware, valueMiddleware, unityDartMiddleware, athleteController.registerDartAthlete);
 dartRoute.get('/', athleteController.dartChampionshipLeaderboard);
+dartRoute.put('/', athleteController.updateDartCompetition);
 
 export default dartRoute;

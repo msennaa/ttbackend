@@ -9,5 +9,6 @@ const athleteController = new YogaController();
 
 yogaRoute.post('/', athleteNameMiddleware, valueMiddleware, unityYogaMiddleware, athleteController.registerYogaAthlete);
 yogaRoute.get('/', athleteController.yogaChampionshipLeaderboard);
+yogaRoute.put('/', athleteController.updateYogaCompetition);
 
 export default yogaRoute;

@@ -9,5 +9,6 @@ const athleteController = new HidratationController();
 
 hidratationRoute.post('/', athleteNameMiddleware, valueMiddleware, unityHidratationMiddleware, athleteController.registerHidratationAthlete);
 hidratationRoute.get('/', athleteController.hidratationChampionshipLeaderboard);
+hidratationRoute.put('/', athleteController.updateHidratationCompetition);
 
 export default hidratationRoute;

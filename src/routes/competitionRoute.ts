@@ -6,6 +6,5 @@ const competitionRoute = Router();
 const competitionController = new CompetitionController();
 
 competitionRoute.post('/', competitionMiddleware, competitionController.registerCompetition);
-competitionRoute.put('/:id', competitionController.updateCompetition);
 
 export default competitionRoute;
