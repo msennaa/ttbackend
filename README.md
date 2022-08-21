@@ -1,6 +1,6 @@
-# Boas vindas ao repositório Olimpiadas Fit!
+# Boas-vindas ao repositório Olimpíadas Fit!
 
-Com a chegada das olimpíadas fit, fomos designados para construir uma API REST em NodeJS para o COF (Comitê Olimpíco Fit), que será responsável por marcar e dizer os vencedores das seguintes modalidades:
+Com a chegada das olimpíadas fit, fomos designados para construir uma API REST em NodeJS para o COF (Comitê Olímpico Fit), que será responsável por marcar e dizer os vencedores das seguintes modalidades:
 
 Competição de hidratação: maior quantidade em L de água, vence
 
@@ -60,11 +60,11 @@ Competição de dardos: maior distância entre os lançamentos vence
     <strong>‼️ Antes de começar a utilizar</strong>
   </summary><br>
 
-  1. Certifique-se que posssui o bando de dados MYSQL em sua maquina
+  1. Certifique-se que possui o bando de dados MYSQL em sua máquina
 
-  2. Configuração das variaveis de ambiente
+  2. Configuração das variáveis de ambiente
 
-    - Caso não queira utilizar variavel de ambiente: Vá no arquivo src/database/config/database.ts e modifique manualmente.
+    - Caso não queira utilizar variável de ambiente: Vá no arquivo src/database/config/database.ts e modifique manualmente.
   
  </details>
 
