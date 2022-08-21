@@ -21,8 +21,8 @@ export default class DartController {
   }
 
   dartChampionshipLeaderboard = async (req:Request, res:Response) => {
-    const allAthletes = await this.service.getByCategory(competitionId);
-    const filteredReturn = allAthletes.map((athlete) => {
+    const allAthletes = await this.service.getAthletesByCategory(competitionId);
+    const mapingAthletesArray = allAthletes.map((athlete) => {
       return {
         posicao: 0,
         competicao: 'campeonato de dardos',
@@ -31,7 +31,7 @@ export default class DartController {
         unidade: athlete.unity,
       }
     })
-    const sortedReturn = this.helpers.sortInvertedAthletes(filteredReturn);
+    const sortedReturn = this.helpers.sortInvertedAthletes(mapingAthletesArray);
 
     const addPosition = sortedReturn.map((athlete, index) => {
       return {
