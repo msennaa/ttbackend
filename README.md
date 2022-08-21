@@ -107,7 +107,7 @@ Competição de dardos: maior distância entre os lançamentos vence
 ---
 
   
-# Explicação do projeto
+# Especificações do projeto
 
 ---
 
