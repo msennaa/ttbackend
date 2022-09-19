@@ -376,5 +376,4 @@ Competição de dardos: maior distância entre os lançamentos vence
     ```json
     { "message": "competitionName must be at least 3 characters" }
     ```
-
 </details>
